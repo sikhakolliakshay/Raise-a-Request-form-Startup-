@@ -1,0 +1,157 @@
+
+.main-page {
+  /* Background image */
+  background-image: url('/public/images/1.jpeg'); /* Replace with the path to your image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  min-height: 100vh; /* Ensures the container takes up the full viewport height */
+  padding-bottom: 50px; /* Optional: adds space at the bottom */
+  position: relative; /* Ensures the absolute positioning of child elements works as intended */
+}
+
+/* You can also set specific styles for header and popup if needed */
+.header-container {
+  z-index: 1; /* Ensures the header is above the background image */
+}
+
+.popup {
+  z-index: 2; /* Ensures the popup is above the background image and header */
+}
+.App {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.open-popup-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px; /* Reduced padding */
+  border-radius: 10px;
+  width: 500px; /* Reduced width */
+  max-height: 80vh; /* Ensure the content fits within the viewport */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.section-title {
+  color: #2d5d36;
+  font-size: 18px;
+  margin-bottom: 5px; /* Reduced margin */
+  font-weight: bold;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Reduced gap */
+}
+
+.form-row input, .form-row select, .form-row textarea {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  margin: 8px 0; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-row textarea {
+  height: 80px; /* Reduced height */
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #4caf50;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.radio-group label {
+  font-size: 14px;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 15px; /* Reduced margin */
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #388e3c;
+}
+.header-container {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Common styles for all buttons in the header */
+.header-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.header-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Specific styles for individual buttons if needed */
+.signin-btn, .signup-btn, .raise-btn {
+  margin-left: 10px;
+}
